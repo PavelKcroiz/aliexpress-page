@@ -1,0 +1,11 @@
+@import '_common';
+
+.list-category {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    border-right: 1px solid $border-color;
+    @media(max-width: 768px){
+        display: none;
+    }
+}

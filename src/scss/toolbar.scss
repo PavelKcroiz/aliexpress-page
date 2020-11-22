@@ -1,0 +1,21 @@
+@import '_common';
+
+.toolbar {
+    display: flex;
+    align-items: center;    
+    height: 46px;
+    padding-top:10px;
+
+    @include text-format(13px, 400,#333);
+
+    &__input {
+        @include size(26px,60px);
+        @extend %border;
+    }
+
+    &__checkbox {
+        @include size(20px,20px);
+        @extend %border;
+    }
+
+}

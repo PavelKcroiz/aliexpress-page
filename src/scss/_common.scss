@@ -1,0 +1,51 @@
+$gray-color: #777;
+$main-side-padding: 0 100px;
+$border-color: #ccc;
+
+%horizontal-menu-indents {
+    margin:0;
+    padding:0;
+}
+
+%border {
+    border: 1px solid $border-color;
+    border-radius: 3px;
+}
+
+%text-color-hover {
+    :hover {
+        color:red;
+    }
+}
+
+%container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+@mixin size($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+@mixin horizontal-menu($color) {
+    display: flex;
+    ul {
+        @extend %horizontal-menu-indents;
+        li {
+            display: inline-flex;
+            @extend %horizontal-menu-indents;
+            a {
+                text-decoration:none;
+                color: $color;
+            }
+        }
+    }
+}
+
+@mixin text-format($font-size, $font-weight, $color){
+    font-size:$font-size;
+    font-weight: $font-weight;
+    color: $color; 
+}

@@ -1,0 +1,37 @@
+@import '_common';
+
+.categories-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $main-side-padding;
+    font-size: 14px;
+    @include horizontal-menu(#352d3e);
+    
+    ul {
+        li {
+            display: inline-flex;
+            align-items: center;
+            height: 39px;
+            padding-left:20px;
+            
+        }
+        
+    }
+
+    &__item--hover {
+        @extend %text-color-hover;
+        
+    }
+    &__right-menu {
+        display: flex;
+        @include horizontal-menu($gray-color);
+        @extend %text-color-hover;
+        i{
+            padding-right:5px;
+        }
+    }
+    @media(max-width: 768px){
+        padding: 0 15px;
+    }
+}

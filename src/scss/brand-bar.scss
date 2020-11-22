@@ -1,0 +1,16 @@
+@import '_common';
+
+.brand-bar {
+    display: inline-flex;
+    @include horizontal-menu(black);
+
+    &__brand {
+        @extend %container-center;
+        @extend %border; 
+        @include size(35.4px, 68.4px); 
+
+        img {
+            @include size(25px, 50px);
+        }     
+    }
+}

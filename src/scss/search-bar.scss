@@ -1,0 +1,70 @@
+@import 'common';
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px 0 100px;
+
+    &__tmall-logo {
+        @include size(69px, 148px);
+        
+    }
+    
+    &__logo-gif {
+        display:flex;
+        @include size(69px, 148px);
+    }
+
+    &__search-form {
+        @extend %container-center;
+        @include size(36px, 533px);
+        border: 1px solid #cbcbcb;;
+        border-right: 1px solid white;
+        border-radius:3px;
+    }
+
+    &__input {
+        @include size(30px, 499px);
+        border:none;
+    }
+
+    &__button {
+        @include size(37.5px, 36px);
+        color: white;
+        border:transparent;
+        border-radius: 3px;
+        background-color:#FF0036;
+         
+        i {
+            font-size:24px;
+        }
+        
+    }
+
+    &__right-menu {
+        padding-left: 25px;
+        @include horizontal-menu(#333);
+        @include text-format(15px, 400, #333);
+        @extend %text-color-hover;
+        ul{
+            li {
+                padding-left: 10px;
+            }
+            
+            a {
+                i {
+                    font-size: 24px;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+    @media(max-width: 1200px){
+        flex-wrap: wrap;
+    }
+    @media(max-width: 768px){
+        padding: 0;
+    }
+    
+}

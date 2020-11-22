@@ -1,0 +1,31 @@
+@import 'common';
+
+.logo-bar {
+    display: flex;
+    height: 35px;
+    justify-content: space-between;
+    padding: $main-side-padding;
+    background-color:rgb(245, 240, 240);
+
+    &__logo {
+        padding-top:7px;
+        @include size(20px, 85px);
+    }
+
+    &__location {
+        position: relative;
+
+        padding-top: 10px;
+        font-size:14px;
+        color: rgb(171, 165, 165);
+
+        :hover {
+            color:red;
+        }
+
+    }
+    @media(max-width: 1024px){
+        justify-content: space-between;
+        padding: 0;
+    }
+}

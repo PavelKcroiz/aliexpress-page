@@ -1,0 +1,70 @@
+@import '_common';
+
+.footer {
+    margin-top: 30px;
+    background-color: #e8e8e8;
+    &-top {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 100px;
+        &__row {
+            display: flex;
+        }
+        &__cell {
+            display: flex;
+            flex-direction: column;
+            width:49%;
+            padding: 10px 0;
+            &-title {
+                @include text-format(16px,400,black);
+                padding: 10px 0;
+            }
+            &-text {
+                @include text-format(12px,400,#666);
+                &:hover {
+                    text-decoration: underline;
+                    color:orange;
+                }
+            }
+        }
+        &__button {
+            i {
+                padding-left:5px;
+            }
+            &--apple {
+                @include size(30px, 130px);
+                background-color: #8c8c8c;
+                @include text-format(16px, 400, #fff);
+                border: none;
+                border-radius: 4px;
+            }
+
+            &--android {
+                @include size(30px, 130px);
+                margin-right: 20px;
+                background-color: #a4c739;
+                @include text-format(16px, 400, #fff);
+                border: none;
+                border-radius: 4px;
+            }
+           
+        }
+        @media(max-width: 768px){
+            padding: 20px 20px;
+        }
+    }
+
+    &-bottom {
+        @extend %container-center;
+        background-color: #333;
+        @include text-format(14px, 400, #666);
+
+        &__text {
+            padding:0 5px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+@import '_common';
+
+.filter-bar {
+    @include horizontal-menu(black);
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 2px solid $border-color;
+    
+    ul {
+        @extend %border;
+
+        li {
+            padding:5px;
+            border-right: 1px solid rgb(248, 243, 243);
+        }
+    }
+
+    &__item {
+        @extend %container-center;
+        @include text-format(13px, 400,#333);
+        
+        i {
+            padding-left:3px;
+        }
+
+        &:hover {
+            color:orange;
+        }
+    }
+    
+    &__right-menu {
+        display: flex;
+
+        span { 
+            @extend %container-center;
+            padding-right: 10px;
+            font-size: 14px;
+        }
+    }
+
+    button {
+        @extend %container-center;
+        @include size (27px, 27px);
+        @include text-format(24px, 400,#cbcbcb);
+        background-color: transparent;
+        border: none;
+        &:hover{
+            color:red;
+        }
+    }
+}

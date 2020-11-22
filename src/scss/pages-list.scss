@@ -1,0 +1,40 @@
+@import '_common';
+
+.pages-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include horizontal-menu(#06c);
+    height: 44px;
+    padding-left: 16.5%;
+    background-color:rgb(245, 240, 240);
+
+    &__page {
+        @extend %container-center;
+        border: 1px solid $border-color;
+        background-color: white;
+        font-size: 14px;
+        @include size(30px, 30px);
+    }
+
+    &__right-content {
+        display: flex;
+        padding-right: 8%;
+
+        span {
+            font-size: 13px;
+        }
+    
+        input {
+            @include size(14px, 38px);
+        }
+    
+        button {
+            display: flex;
+            align-items: center;
+            border-radius: 3px;
+            @include size(20px, 42px);
+            @include text-format(14px, 400, black);
+        }
+    }
+}

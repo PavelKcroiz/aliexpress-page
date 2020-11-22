@@ -1,0 +1,26 @@
+@import '_common';
+
+.list-responsive {
+    display: flex;
+    align-items: center;
+    padding: $main-side-padding;
+    height: 50px;
+    font-size: 13px;
+    &__results {
+        color: black;
+    }
+
+    &__results-count {
+        color: orange;
+    }
+
+    &__menu-text {
+        color: $gray-color;
+
+        &--red-hover {
+            color: $gray-color;
+            @extend %text-color-hover;
+        }
+    }
+
+}

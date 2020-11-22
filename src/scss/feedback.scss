@@ -1,0 +1,28 @@
+@import "_common";
+
+.feedback {
+    display: flex;
+    margin: 15px 100px 15px 250px;
+    border: 1px solid $border-color;  
+    height: 70.5px;
+    &__content {
+        display: flex;
+        align-items:center;
+        padding: 20px;
+        @include text-format(14px, 700,black);
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10px;
+        border-radius: 3px;
+        @include size(30px, 62px);
+        @include text-format(14px, 400, black);
+    }
+
+    span {
+        padding: 0 20px;
+    }
+}

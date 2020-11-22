@@ -1,0 +1,10 @@
+@import "_common";
+
+.product-list {
+    @include horizontal-menu(#036);
+    ul {
+        li{
+            border-bottom: 1px solid #cccccc;
+        }
+    }
+}

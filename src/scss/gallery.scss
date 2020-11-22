@@ -1,0 +1,14 @@
+.gallery {
+    display:flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-inline-start: unset;
+    list-style-type: none;
+
+    &__list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
