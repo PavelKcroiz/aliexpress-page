@@ -47,19 +47,17 @@
         @include horizontal-menu(#333);
         @include text-format(15px, 400, #333);
         @extend %text-color-hover;
-        ul{
-            li {
-                padding-left: 10px;
-            }
-            
-            a {
-                i {
-                    font-size: 24px;
-                    padding-right: 10px;
-                }
-            }
-        }
     }
+
+    &__menu-item {
+        padding-left: 10px;
+    }
+
+    &__icon {
+        font-size: 24px;
+        padding-right: 10px;
+    }
+
     @media(max-width: 1200px){
         flex-wrap: wrap;
     }

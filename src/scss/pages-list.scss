@@ -20,21 +20,21 @@
     &__right-content {
         display: flex;
         padding-right: 8%;
+    }
 
-        span {
-            font-size: 13px;
-        }
-    
-        input {
-            @include size(14px, 38px);
-        }
-    
-        button {
-            display: flex;
-            align-items: center;
-            border-radius: 3px;
-            @include size(20px, 42px);
-            @include text-format(14px, 400, black);
-        }
+    &__transition {
+        font-size: 13px;
+    }
+
+    &__window {
+        @include size(14px, 38px);
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        border-radius: 3px;
+        @include size(20px, 42px);
+        @include text-format(14px, 400, black);
     }
 }

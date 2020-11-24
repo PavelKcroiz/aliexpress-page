@@ -12,8 +12,8 @@
     &:hover {
         border: 1px solid $border-color;
         box-shadow: 0 0 2px rgba(0,0,0,0.5);
-        height: 570px;
-        .product__footer {
+        @include size(550.4px,278px);
+        &__footer {
             display: flex;
             flex-direction: column;
             padding-top: 20px;
@@ -34,7 +34,7 @@
             }
         }
 
-        .product__add {
+        &__add {
             display: flex;
             @include text-format(13px, 400, #666);  
             padding-top:10px; 
@@ -204,7 +204,7 @@
     
         &:hover {
             @extend %border;
-            .product--listview__bell {
+            &__bell {
                 display: flex;
                 padding-left: 20px;
                 color: gold;

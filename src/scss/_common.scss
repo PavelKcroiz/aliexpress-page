@@ -32,10 +32,8 @@ $border-color: #ccc;
 @mixin horizontal-menu($color) {
     display: flex;
     ul {
-        @extend %horizontal-menu-indents;
         li {
             display: inline-flex;
-            @extend %horizontal-menu-indents;
             a {
                 text-decoration:none;
                 color: $color;

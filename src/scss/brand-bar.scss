@@ -7,10 +7,10 @@
     &__brand {
         @extend %container-center;
         @extend %border; 
-        @include size(35.4px, 68.4px); 
+        @include size(35.4px, 68.4px);   
+    }
 
-        img {
-            @include size(25px, 50px);
-        }     
+    &__image {
+        @include size(25px, 50px);
     }
 }

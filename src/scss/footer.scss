@@ -28,9 +28,6 @@
             }
         }
         &__button {
-            i {
-                padding-left:5px;
-            }
             &--apple {
                 @include size(30px, 130px);
                 background-color: #8c8c8c;
@@ -49,6 +46,11 @@
             }
            
         }
+
+        &__icon {
+            padding-left:5px;
+        }
+
         @media(max-width: 768px){
             padding: 20px 20px;
         }

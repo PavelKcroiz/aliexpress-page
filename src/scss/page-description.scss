@@ -4,7 +4,8 @@
     margin: 10px 100px 10px 250px;
     @include text-format(13px, 400, #666);
 
-    a {
+    &--blue {
+        text-decoration: none;
         color:blue;
     }
     @media(max-width: 768px){

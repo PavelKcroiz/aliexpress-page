@@ -6,39 +6,36 @@
     padding: 20px 0;
     border-bottom: 2px solid $border-color;
     
-    ul {
+    &__list {
         @extend %border;
-
-        li {
-            padding:5px;
-            border-right: 1px solid rgb(248, 243, 243);
-        }
     }
 
     &__item {
+        padding:5px;
+        border-right: 1px solid rgb(248, 243, 243);
         @extend %container-center;
         @include text-format(13px, 400,#333);
         
-        i {
-            padding-left:3px;
-        }
-
         &:hover {
             color:orange;
         }
     }
+
+    &__icon {
+        padding-left: 3px;
+    }
     
     &__right-menu {
         display: flex;
-
-        span { 
-            @extend %container-center;
-            padding-right: 10px;
-            font-size: 14px;
-        }
     }
 
-    button {
+    &__view { 
+        @extend %container-center;
+        padding-right: 10px;
+        font-size: 14px;
+    }
+
+    &__button {
         @extend %container-center;
         @include size (27px, 27px);
         @include text-format(24px, 400,#cbcbcb);

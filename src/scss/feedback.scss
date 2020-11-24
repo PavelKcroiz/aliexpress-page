@@ -12,7 +12,7 @@
         @include text-format(14px, 700,black);
     }
 
-    button {
+    &__button {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -22,7 +22,7 @@
         @include text-format(14px, 400, black);
     }
 
-    span {
+    &__question {
         padding: 0 20px;
     }
 }

@@ -36,17 +36,13 @@
         text-decoration: none;
     }
 
-    i {
+    &__icon {
         padding-left: 5px;
     }
     
-    ul {
-        padding: 0;
-        li {
-            @include text-format(13px, 400, #666);
-            list-style-type: square;
-            padding: 0;
-        }
+    &__description-item { 
+        @include text-format(13px, 400, #666);
+        list-style-type: square;    
     }
 
 }
